@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
 
-This is a temporary script file.
-"""
 # Load the packages needed to complete the script
 
 import numpy as np
@@ -43,6 +39,7 @@ plt.grid()
 plt.show()
 
 # Add formula display
+# unsure how to display the equation in mathematical symbology???
 
 #from sympy import init_session
 #from sympy import *
@@ -50,4 +47,4 @@ plt.show()
     #str(Integral(sqrt(1/y), y))
 #print(latex(Integral(sqrt(1/y), y)))
 
-# unsure how to display the equation in mathematical symbology???
+
