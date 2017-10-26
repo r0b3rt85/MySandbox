@@ -1,0 +1,256 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css?family=Karla:300,400,900|Space+Mono:300,400,900');
+
+
+/*variables*/
+:root {
+--dark-blue: #0b2027;
+--blue: #40798c;
+--accent: #70a9a1;
+--light-accent: #70a9a1;
+--yellow: #f6f1d1;
+--white: #f8f8f8;
+
+--fft: "Space Mono", monospace;
+--ffm: "Karla", sans-serif;
+--fw-l: 300;
+--fw-n: 400;
+--fw-b: 900
+}
+
+/* Styles */
+body {
+  font-family: 'Karla', sans-serif;
+  font-weight: 300;
+  width: auto;
+}
+
+/* ----------- */
+/* nav section */
+/* ----------- */
+.nav-container {
+  width: 100vw;
+  height: auto;
+  position: fixed;
+  z-index: 9999;
+  background: rgba(11, 32, 39, 0.6);
+  display: grid;
+  grid-template-columns: repeat(7, 7fr);
+}
+
+.nav-icon{
+  columns: span 2
+
+}
+
+.nav-container h5 {
+  font-family: 'Space Mono', monospace;
+  font-size: 14;
+
+}
+
+.nav-container button {
+  min-width: 5fr;
+  padding: 8px 8px;
+  background: none;
+  border: none;
+  color: rgba(248, 248, 248, 0.6);
+}
+
+.nav-container button:hover {
+  background-color: rgba(64, 121, 140, 0.8);
+}
+.nav-container button:active {
+  background-color: rgba(11, 32, 39, 0.8);
+}
+
+/* ------------ */
+/* home section */
+/* ------------ */
+.home-section {
+  background: #70a9a1;
+  padding: 1em;
+  color: rgba(248, 248, 248, 0.6);
+}
+
+.general-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.colors {
+  width: 100vw;
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 10fr);
+  justify-content: center;
+}
+
+.colors .color-1 {
+  width: 50px;
+  height: 50px;
+  background: #0b2027;
+  border-width: 2px;
+  border-color: #f8f8f8;
+}
+.colors .color-2 {
+  width: 50px;
+  height: 50px;
+  background: #40798c;
+  border-width: 2px;
+  border-color: #f8f8f8;
+}
+.colors .color-3 {
+  width: 50px;
+  height: 50px;
+  background: #70a9a1;
+  border-width: 2px;
+  border-color: #f8f8f8;
+}
+.colors .color-4 {
+  width: 50px;
+  height: 50px;
+  background: #f6f1d1;
+  border-width: 2px;
+  border-color: #0b2027;
+}
+.colors .color-5 {
+  width: 50px;
+  height: 50px;
+  background: #f8f8f8;
+  border-width: 2px;
+  border-color: #0b2027;
+}
+
+/* ---------------- */
+/* css-grid section */
+/* ---------------- */
+.css-grid {
+  background: #0b2027;
+  padding: 1em;
+  color: rgba(248, 248, 248, 0.6);
+}
+
+/* Grid layout */
+.grid-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+
+.main-description {
+  grid-column: span 3;
+}
+
+/* Other styles*/
+.main-title {
+  font-family: 'Space Mono' monospace;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #f8f8f8;
+  margin-top: 1;
+  line-height: 1;
+}
+
+.main-title span {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+.image-container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.image-container figcaption {
+  position: absolute;
+  top: 1em;
+  bottom: 1em;
+  right: 1em;
+  left: 1em;
+  background: rgba(112, 169, 161, 0.8);
+  color: #0b2027;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 300ms;
+}
+.image-container:hover figcaption {
+  opacity: 1;
+}
+
+.image-container .name {
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+
+/* ---------------- */
+/* parallax section */
+/* ---------------- */
+.parallax-section {
+  background: #40798c;
+  padding: 1em;
+  color: rgba(248, 248, 248, 0.6);
+}
+
+/* -------------- */
+/* js-app section */
+/* -------------- */
+.js-app-section {
+  background: #70a9a1;
+  padding: 1em;
+  color: rgba(248, 248, 248, 0.6);
+}
+
+/* ----------- */
+/* SQL section */
+/* ----------- */
+.sql-section {
+  background: #0b2027;
+  padding: 1em;
+  color: rgba(248, 248, 248, 0.6);
+}
+
+/* --------------- */
+/* contact section */
+/* --------------- */
+.contact-section {
+  background: #40798c;
+  padding: 1em;
+  color: rgba(248, 248, 248, 0.6);
+}
+
+/* ------------- */
+/* media queries */
+/* ------------- */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-description {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 425px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .main-description {
+    grid-column: span 1;
+  }
+}
