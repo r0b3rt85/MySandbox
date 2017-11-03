@@ -10,9 +10,9 @@ function golfScore(par, strokes) {
   } else if(strokes == par + 1) {
     return "Bogey";
   } else if(strokes == par + 2) {
-    return "Double Bogeu";
+    return "Double Bogey";
   } else {
-    return "Do Home!";
+    return "Go Home!";
   }
 }
 
