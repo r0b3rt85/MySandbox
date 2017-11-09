@@ -1,8 +1,9 @@
 // Reverse a provided string.
+//
+// Task:
 // You must use arrays.
 // Your result must be a string.
 
-// Defining how the algorithm / function will work when called with a given parameter
 function reverseString(str){
   // Define the variables needed for the calculations (str is defined as a parameter)
   var stringOut = "";

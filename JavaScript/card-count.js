@@ -1,3 +1,10 @@
+// Card Counting
+//
+// Task:
+// Create a script that will help you decide whether to hold or bet in a given game of black jack depending on the previously delt cards
+
+
+// Initializing the default score
 var count = 0;
 
 // Calculate the running count

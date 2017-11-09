@@ -1,8 +1,9 @@
 // Factorialize a Number
+//
+// Task:
 // Return the factorial of the provided integer.
 // If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n.
 
-// Defining how the algorithm / function will work when called with a given parameter
 function factorialize(num) {
   // Define output variables (initial value = 1)
   var numOut = 1;

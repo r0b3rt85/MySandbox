@@ -1,3 +1,8 @@
+// Golf Score
+//
+// Task:
+// Create a script to calculate the golf score using the  given pare and the accumulated score.
+
 function golfScore(par, strokes) {
   if(strokes == 1) {
     return "Hole-in-one!";
