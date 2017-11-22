@@ -21,7 +21,7 @@ function titleCase(str) {
 
     // #4 - Join the words together and output the result
     return words.join(" ");
-  }
+}
 
 // The call method with the string that is to be capitalized
 titleCase("I'm a little tea pot");
