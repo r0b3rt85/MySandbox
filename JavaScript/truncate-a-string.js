@@ -14,8 +14,19 @@
 // truncated string.
 
 function truncateString(str, num) {
-    // [string]__reduce to [num] length + "..."
-    return str;
+  // [string]__reduce to [num] length + "...
+  var len = str.length;
+  var result = "";
+
+  if (len > num && num > 3) {
+    result = str.slice(0, (num-3)) + "...";
+  } else if (len > num && num <= 3) {
+    result = str.slice(0, num) + "...";
+  } else {
+    result = str;
   }
-  
-  truncateString("A-tisket a-tasket A green and yellow basket", 11);
+  return result;
+}
+
+// The call method with the string and number to test
+truncateString("A-tisket a-tasket A green and yellow basket", 11);
